@@ -1,0 +1,53 @@
+<main>
+    <section>
+        <form action="api/user/register" method="POST">
+        {{!-- <form class="sign-up-form"> --}}
+            <fieldset>
+                <legend>REGISTER</legend>
+                <div>
+                    <label for="username">username</label>
+                    <input 
+                        type="username"
+                        name="username"
+                        class="username-input"
+                        placeholder="enter username"
+                        autocomplete="off"
+                        autofocus
+                    />
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        class="email-input"
+                        placeholder="enter email"
+                        autocomplete="off"
+                    />
+                </div>
+                <div>
+                    <label for="password">create password</label>
+                    <input 
+                        type="text"
+                        name="password"
+                        class="password-input"
+                        placeholder="enter password"
+                        autocomplete="off"
+                    />
+                </div>
+                {{!-- <div>
+                    <label for="password_c">confirm password</label>
+                    <input 
+                        type="text"
+                        name="password_c"
+                        class="password-c-input"
+                        placeholder="confirm password"
+                        autocomplete="off"
+                    />
+                </div> --}}
+                <input type="submit" class="submit-btn" value="SUBMIT">
+            </fieldset>
+        </form>
+        <p>Have an account? <span><a href="/login">LOGIN</a></span></p>
+    </section>
+</main>

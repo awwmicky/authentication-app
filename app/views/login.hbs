@@ -1,0 +1,33 @@
+<main>
+    <section>
+        <form action="api/user/login" method="POST">
+        {{!-- <form class="sign-in-form"> --}}
+            <fieldset>
+                <legend>LOGIN</legend>
+                <div>
+                    <label for="email">email</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        class="email-input"
+                        placeholder="enter email"
+                        autocomplete="off"
+                        autofocus
+                    />
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input 
+                        type="text"
+                        name="password"
+                        class="password-input"
+                        placeholder="enter password"
+                        autocomplete="off"
+                    />
+                </div>
+                <input type="submit" class="submit-btn" value="SUBMIT">
+            </fieldset>
+        </form>
+        <p>create new account? <span><a href="/register">REGISTER</a></span></p>
+    </section>
+</main>
